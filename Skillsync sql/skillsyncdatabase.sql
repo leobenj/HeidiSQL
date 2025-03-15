@@ -1,8 +1,12 @@
--- 1. Tietokannan luonti
-CREATE DATABASE SkillSync;
+CREATE DATABASE SkillSync 
+CHARACTER SET utf8mb4 
+COLLATE utf8mb4_swedish_ci;
+
 USE SkillSync;
 
--- 2. Taulujen luonti
+
+
+
 CREATE TABLE Users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(150) NOT NULL UNIQUE,
