@@ -37,7 +37,7 @@ SELECT username AS user_name, email AS user_email FROM Users;
 SELECT * FROM Users WHERE email LIKE '%gmail.com' OR email LIKE '%outlook.com';
 
 -- 3. Kysely, joka sisältää 'AND' avainsanan
-SELECT * FROM Users WHERE created_at > '2024-01-01' AND username LIKE 'L%';
+SELECT * FROM Users WHERE '2024-01-02' > created_at AND username LIKE '%one%';
 
 -- 4. Aggregaattifunktio: Lasketaan käyttäjien määrä
 SELECT COUNT(*) AS total_users FROM Users;
